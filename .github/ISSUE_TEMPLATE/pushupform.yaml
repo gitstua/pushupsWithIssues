@@ -34,5 +34,5 @@ body:
     attributes:
       label: Confirmation
       description: By submitting this issue, you agree You did the amount entered
-        - label: Yep, thats correct
+        - label: Yep thats correct
           required: true

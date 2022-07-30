@@ -1,0 +1,38 @@
+name: Push up 
+description: Log a push up
+title: "[Log]: "
+labels: ["PushUpsDone"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 10
+        - 20
+        - 30
+        - 50
+        - 70
+        -100
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      description: By submitting this issue, you agree You did the amount entered
+        - label: Yep, thats correct
+          required: true
